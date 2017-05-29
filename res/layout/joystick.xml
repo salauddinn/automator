@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grunge"
+    android:orientation="vertical" 
+    android:gravity="center"
+    >
+
+    <Button
+        android:id="@+id/down_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="88dp"
+        android:layout_marginLeft="212dp"
+        android:background="@drawable/down"
+        android:onClick="onDown" />
+
+    <Button
+        android:id="@+id/up_arrow"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/down_arrow"
+        android:background="@drawable/up"
+        android:onClick="onUp" />
+
+    <Button
+        android:id="@+id/Enter_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/space_bar"
+        android:layout_alignBottom="@+id/space_bar"
+        android:layout_alignLeft="@+id/right"
+        android:layout_alignParentRight="true"
+        android:onClick="onEnter"
+        android:text="Enter" />
+
+    <Button
+        android:id="@+id/space_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="28dp"
+        android:layout_toLeftOf="@+id/Enter_bar"
+        android:onClick="onSpace"
+        android:text="Space" />
+
+    <Button
+        android:id="@+id/left"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_above="@+id/down_arrow"
+        android:layout_toLeftOf="@+id/up_arrow"
+        android:background="@drawable/arrow_left"
+        android:onClick="onLeft" />
+
+    <Button
+        android:id="@+id/right"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_above="@+id/down_arrow"
+        android:layout_toRightOf="@+id/up_arrow"
+        android:background="@drawable/arrow_right"
+        android:onClick="onRight" />
+
+</RelativeLayout>

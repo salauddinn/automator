@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp" >
+
+    <EditText
+        android:id="@+id/msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter a Alert Message"
+        android:inputType="text" >
+
+        <requestFocus />
+    </EditText>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="172dp" >
+
+        <Button
+            android:id="@+id/tclear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="24dp"
+            android:onClick="onClear"
+            android:text="Clear" />
+
+        <Button
+            android:id="@+id/alert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tclear"
+            android:layout_alignBottom="@+id/tclear"
+            android:layout_marginLeft="37dp"
+            android:layout_toRightOf="@+id/tclear"
+            android:onClick="onAlert"
+            android:text="Alert" />
+    </RelativeLayout>
+
+</LinearLayout>

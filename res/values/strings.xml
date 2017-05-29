@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Handy</string>
+    <string name="app_name">Handy</string>
+    <string-array name="keys_array">
+        <item>select..</item>
+        <item>CTRL</item>
+        <item>ALT</item>
+        <item>SHIFT</item>
+        <item>DEL</item>
+        <item>HOME</item>
+        <item>ESCAPE</item>
+        <item>END</item>
+        <item>ENTER</item>
+    </string-array>
+    
+
+</resources>

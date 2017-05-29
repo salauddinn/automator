@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="rkv.team.seminar"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="14" />
+
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+
+    <application
+        android:icon="@drawable/handy"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".Intro"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SeminarActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".Home"
+            android:label="home"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="rkv.team.seminar.HOME" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Presentation"
+            android:label="presentation"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".Mouse"
+            android:label="Mouse"
+            android:parentActivityName=".Home"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".Keyboard"
+            android:label="Keyboard"
+            android:parentActivityName=".Home" >
+        </activity>
+        <activity
+            android:name=".Shell"
+            android:label="Shell"
+            android:parentActivityName=".Home" >
+        </activity>
+        <activity
+            android:name=".Media"
+            android:label="Media"
+            android:parentActivityName=".Home" >
+        </activity>
+        <activity
+            android:name=".Textpad"
+            android:label="Textpad"
+            android:parentActivityName=".Home" >
+        </activity>
+        <activity
+            android:name=".Joystick"
+            android:label="Joystick"
+            android:parentActivityName=".Home"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".Server"
+            android:label="Server"
+            android:parentActivityName=".Home" >
+        </activity>
+        <activity
+            android:name=".Share"
+            android:label="Share"
+            android:parentActivityName=".Home" >
+        </activity>
+    </application>
+
+</manifest>

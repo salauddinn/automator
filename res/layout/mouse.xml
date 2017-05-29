@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/mousepad"
+            android:layout_width="460dp"
+            android:layout_height="190dp"
+            android:background="@android:color/darker_gray" />
+
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/lclick"
+            android:layout_width="249dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.79"
+            android:onClick="onLeft"
+            android:text="Left click" />
+
+        <Button
+            android:id="@+id/rclick"
+            android:layout_width="267dp"
+            android:layout_height="wrap_content"
+            android:onClick="onRight"
+            android:text="Right click" />
+    </LinearLayout>
+
+</LinearLayout>
